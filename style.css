@@ -11,12 +11,84 @@ Version: 1.0
 body{
 	background-color: #e6e6e6;
 }
+/*grid code do not touch*/
+.container {
+	width: 100%;
+	margin-left: auto;
+  	margin-right: auto;
+}
+.row {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: flex-start;
+}
+.row [class*="col-"] {
+    float: left;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* smarphones grid*/
+@media only screen and (max-width: 450px) {
+	.row [class*="col-"]{
+		width: 100%;
+	}
+}
+/* tablets grid*/
+@media only screen and (max-width: 768px) {
+	.row [class*="col-"]{
+		width: 100%;
+	}
+}
+.col-1 {
+	width: 8.33%;
+}
+.col-2 {
+	width: 16.66%;
+}
+.col-3 {
+	width: 25%;
+}
+.col-4 {
+	width: 33.33%;
+}
+.col-5 {
+	width: 41.66%;
+}
+.col-6 {
+	width: 50%;
+}
+.col-7 {
+	width: 58.33%;
+}
+.col-8 {
+	width: 66.66%;
+}
+.col-9 {
+	width: 75%;
+}
+.col-10 {
+	width: 83.33%;
+}
+.col-11 {
+	width: 91.66%;
+}
+.col-12 {
+	width: 100%;
+}
+/*end of grid code touchy touch*/
+/*font code*/
 p, h3, h4, h5, h6, div{
 	font-family: 'Cormorant Garamond', serif;
 }
 h1, h2, li{
 	font-family: 'Oswald', sans-serif;
 }
+/*header code*/
 .header {
 	position: relative;
 	height: 5%;
@@ -71,12 +143,12 @@ h1, h2, li{
 	object-fit: cover;
 }
 /*Body*/
-.news {
+.post {
 	height: 30%;
 	border: 2px solid black;
 	padding: 5px;
 }
-.news h2{
+.post h2{
 	background-color: #314996;
 	width: 100%;
 	position: relative;
@@ -102,7 +174,7 @@ h1, h2, li{
 .panel{
 	display: none;
 }
-.info, .news, .info2, .infoMap{
+.info, .post, .info2, .infoMap{
 	height: auto;
 	max-height: 250px;
 	margin: 0 10px 50px 10px;
@@ -110,7 +182,7 @@ h1, h2, li{
 	cursor: pointer;
 	background: white;
 }
-.news h2{
+.post h2{
 	position: relative;
 	text-align: center;
 	color: #fff;

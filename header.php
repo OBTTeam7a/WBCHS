@@ -1,39 +1,21 @@
 <!DOCTYPE html>
 <html <?php language_attributes();?>>
-  <head>
-	  <meta charset="<?php bloginfo('charset'); ?>">
-	  <meta name="viewport" content="width=device-width">
-	  <title><?php bloginfo('name'); ?></title>
-	  <?php wp_head(); ?>
-  </head>
-  <body <?php body_class();  ?>>
-	<div class="header">
-	  <div class="logo">
-		<a href="<?php echo home_url();?>">
-			<img src="images/WBCHSTRANLOGO.png">
-		</a>
-	  </div>
-	  <div id="space"></div>
-	  <div class="top_right_header">
-		<div class="lang_select">
-		  <div class="sub_menu_value">
-			<span style=" text-align: center;">
-			  <a href="#">
-				<span>Select Language</span>
-				  <div class="arrow">
-					<img src="images/droparrow.png">
-				  </div>
+	<head>
+		<meta charset="<?php bloginfo('charset'); ?>">
+		<meta name="viewport" content="width=device-width">
+		<title><?php bloginfo('name'); ?></title>
+		<?php wp_head(); ?>
+	</head>
+	<body <?php body_class();  ?>>
+		<div class="header">
+			<div class="logo">
+				<a href="<?php echo home_url();?>">
+					<img src="images/WBCHSTRANLOGO.png">
 				</a>
-			  </span>
 			</div>
-		  </div>
-		  <div class="sign login_tag">
-			<a href="#">Login</a>
-		  </div>
-		  <div class="sign register_tag">
-			<a href="#">Register</a>
-		  </div>
-		  <div id="dropdown">
+		<div id="space"></div>
+		<div class="top_right_header">
+			<div id="dropdown">
 			<div class="dropbtn" onclick="change(this) , openMenu()">
 			  <div class="bar1"></div>
 			  <div class="bar2"></div>
@@ -52,10 +34,10 @@
 			</div>
 		  </div>
 		</div>
-	  </div>
-      <nav class="site_nav">
-          $args = array(
-          'theme_location'=> "prime"
-          )
-          <?php wp_nav_menu( $args ); ?>
-      </nav>
+		</div>
+		<nav class="site_nav">
+			<?php
+			$args = array('theme_location'=> "prime");
+			?>
+		<?php wp_nav_menu( $args ); ?>
+	  </nav>
