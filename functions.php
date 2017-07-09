@@ -7,7 +7,7 @@
 	function bannerPic(){
     // Navigation Menus
     register_nav_menus(array(
-        'prime'=>__('Primary Menu')
+        'prime' => __('Primary Menu')
     ));
 	// featured Image
 	add_theme_support('post-tumbnails');

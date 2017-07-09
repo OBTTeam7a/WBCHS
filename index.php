@@ -1,5 +1,11 @@
 <?php
 	get_header();
+	<nav class="site_nav">
+		<?php
+		$args = array('theme_location'=> "prime");
+		?>
+	<?php wp_nav_menu( $args ); ?>
+  </nav>
 	if (have_posts()):
 		while(have_posts()) : the_post();
 ?>

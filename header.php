@@ -34,10 +34,4 @@
 			</div>
 		  </div>
 		</div>
-		</div>
-		<nav class="site_nav">
-			<?php
-			$args = array('theme_location'=> "prime");
-			?>
-		<?php wp_nav_menu( $args ); ?>
-	  </nav>
+	</div>
