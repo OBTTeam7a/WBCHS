@@ -32,18 +32,7 @@ body{
     clear: both;
     display: table;
 }
-/* smarphones grid*/
-@media only screen and (max-width: 450px) {
-	.row [class*="col-"]{
-		width: 100%;
-	}
-}
-/* tablets grid*/
-@media only screen and (max-width: 768px) {
-	.row [class*="col-"]{
-		width: 100%;
-	}
-}
+
 .col-1 {
 	width: 8.33%;
 }

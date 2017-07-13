@@ -22,15 +22,10 @@
 			  <div class="bar3"></div>
 			</div>
 			<div id="myDropdown" class="dropdown-content">
-			  <a href="index.html">Home</a>
-			  <a href="academics.html">Academics</a>
-			  <a href="contact.html">Contact Us</a>
-			  <a href="mission.html">Mission</a>
-			  <a href="Calendar.html">Calendar</a>
-			  <a href="about.html">About Us</a>
-			  <a href="#">login</a>
-			  <a href="#">Register</a>
-			  <a href="#">Select Lanuage</a>
+				<nav class="site_nav">
+					<?php $args = array('theme_location'=> "prime"); ?>
+					<?php wp_nav_menu( $args ); ?>
+				</nav>
 			</div>
 		  </div>
 		</div>

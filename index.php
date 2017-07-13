@@ -7,7 +7,7 @@
 	<?php wp_nav_menu( $args ); ?>
   </nav>
 	if (have_posts()):
-		while(have_posts()) : the_post();
+		while (have_posts()) : the_post();
 ?>
 <article class=" col-3 post">
 	<h2>
